@@ -1,0 +1,12 @@
+services:
+ app:
+  container_name: service-api-pos
+  image: service-api-pos
+  build: .
+  restart: unless-stopped
+  ports:
+   - 4040:3000
+  environment: 
+   - TZ=America/Argentina/Buenos_Aires
+  volumes:
+   - /var/docker/service-api-pos/src/utils/:/app/utils

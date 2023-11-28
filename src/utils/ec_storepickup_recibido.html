@@ -1,0 +1,77 @@
+<table class="x_main" align="center"
+    style="border-collapse: collapse; margin: 0px auto; text-align: left; background-color: rgb(255, 255, 255); max-width: 800px; width: 100%; line-height: 1.4; font-size: 14px; color: rgb(0, 0, 0);">
+    <tbody>
+        <tr>
+            <td class="x_header"
+                style="font-family:'Nunito Sans','Helvetica Neue',Helvetica,Arial,sans-serif; vertical-align:top; padding:15px; border:0px solid #ccc; border-width:0 0 1px; text-align:center">
+                <a href="{{URL_STORE}}" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable"
+                    class="x_logo"
+                    style="vertical-align: middle; line-height: 0; font-size: 0px; color: rgb(0, 0, 0); text-decoration: underline;"
+                    data-linkindex="0"><img data-imagetype="External" src="{{URL_IMG}}" width="139"
+                        alt="{{STORE}} Store" border="0"
+                        style="border:0; height:auto; line-height:100%; outline:none; text-decoration:none"></a>
+            </td>
+        </tr>
+        <tr>
+            <td class="x_main-content"
+                style="vertical-align: top; background-color: rgb(255, 255, 255); padding: 30px 15px;">
+                <table style="border-collapse:collapse; width:100%">
+                    <tbody>
+                        <tr class="x_email-intro" style="text-align:center">
+                            <td
+                                style="font-family:'Nunito Sans','Helvetica Neue',Helvetica,Arial,sans-serif; vertical-align:top; padding:0 0 20px;">
+                                <p class="x_greeting"
+                                    style="margin-top: 0px; margin-bottom: 10px; color: rgb(0, 0, 0); font-size: 24px; line-height: 30px;">
+                                    ¡Hola, {{NOMBRE}}!</p>
+                            </td>
+                        </tr>
+
+                        <tr class="x_email-information">
+                            <td
+                                style="font-family:'Nunito Sans','Helvetica Neue',Helvetica,Arial,sans-serif; vertical-align:top; padding:20px 0 0">
+                                <p style="margin-top:0; margin-bottom:10px; margin:0">Te contamos que tu pedido ya se
+                                    encuentra en la Tienda listo para retirar.
+                                    Para poder hacer efectiva la entrega, será necesario que quien retire la compra
+                                    presente el siguiente código para confirmar tu identidad junto con su DNI.
+                                </p>
+                                
+                                <div
+                                    style="border-left-style:solid;border-left-width:5px;border-left-color:#1d4ed8;background-color: #dbeafe;
+                                    font-family:'Nunito Sans','Helvetica Neue',Helvetica,Arial,sans-serif;margin-top: 2em">
+                                    <div class="x_greeting"
+                                        style="color: rgb(0, 0, 0); font-size: 18px; vertical-align:middle; text-align: center;padding:15px">
+                                        <p style="margin-top: 0px">Número de pedido: {{NRO_PEDIDO}}</p>
+                                        <p style="margin: 0px">Código de seguridad: {{COD}}</p>
+                                    </div>
+                                </div>
+
+                                <p style="margin-top: 1em">Te recordamos los datos de la Tienda seleccionada:</p>
+                                <p>Dirección: {{DIR}}</p>
+                                <p>Teléfono: {{TEL}}</p>
+                                <p>Horario de atención: {{HOR_ATEN}}</p>
+                                <p> El pedido permanecerá 30 días en la Tienda a partir del día de hoy para que puedas
+                                    retirarlo sin inconvenientes.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="x_closing"
+                    style="font-family:'Nunito Sans','Helvetica Neue',Helvetica,Arial,sans-serif;border-style: solid; border-color: rgb(204, 204, 204); border-image: initial; border-width: 1px 0px 0px; margin: 30px 0px 0px; padding: 25px 0px 0px; text-align: center; color: rgb(0, 0, 0); font-size: 14px;">
+                    <span class="x_closing-message"
+                        style="display: block; max-width: 400px; color: rgb(153, 153, 153); margin: 0px auto 10px;">Si
+                        tenés alguna duda respecto a tu pedido, no dejes de ponerte en contacto
+                        con nosotros al mail <a href="mailto:{{EMAIL_STORE}}" target="_blank" rel="noopener noreferrer"
+                            data-auth="NotApplicable" style="text-decoration: underline; color: rgb(153, 153, 153);"
+                            data-linkindex="2">{{EMAIL_STORE}}</a>, o escribinos por whatsapp al {{WHATSAPP_STORE}} de Lunes a Viernes de 10 a 17 hs.</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="x_footer"
+                style="font-family:'Nunito Sans','Helvetica Neue',Helvetica,Arial,sans-serif; vertical-align:top; padding:30px 15px; background-color:#000; text-align:center; color:#fff; overflow:hidden">
+                <p class="x_copyright" style="margin-top:0; margin-bottom:10px; margin:0; font-size:12px">© {{ANIO}}
+                    Copyright {{STORE}} | todos los derechos reservados</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
