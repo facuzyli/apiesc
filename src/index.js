@@ -8,10 +8,15 @@ const ClientesController = require('./controllers/ClientesController.js');
 const PedidosController = require('./controllers/PedidosController.js');
 const RemitosController = require('./controllers/RemitosController.js');
 const EmailController = require('./controllers/EmailController.js');
+const EscanerController = require('./controllers/EscanerController.js'); 
+
+
 
 app.use(express.json());
 
 app.get('/index.php/clientes/get/:idTienda/:idSucursal', ClientesController.buscarCliente);
+
+app.get('/rutaParaCodigoEnvio/:codigoEnvio/:scanDateTime', EscanerController.consultarYGuardarPorCodigoEnvio);
 
 app.get('/index.php/pedidos/consultar/:idTienda/:idSucursal/:nroPedido', PedidosController.consultaPedidoOnline);
 
